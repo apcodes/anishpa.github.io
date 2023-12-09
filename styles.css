@@ -1,36 +1,49 @@
-/* Add this to your styles.css file */
-body {
-    font-family: 'Noto Sans', sans-serif; /* Apply the custom font to the entire body */
-  }
-  
-  h1, h2, p, footer {
-    font-family: 'Noto Sans', sans-serif; /* Apply the custom font to specific elements */
-  }
-  h1{
-    font-size: 100px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 50px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
-#imageContainer img {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  #imageContainer img.d-block {
-    opacity: 1;
-  }
-  footer {
-    background-color: #0081afff;
-    padding: 1rem; /* Add padding for better visual appearance */
-  }
-  
-  footer div {
-    color: black; /* Set the text color to black */
-    font-size: large;
-    font-weight: bold;
+body, h1, h2,h3, h4, p, footer{
+  font-family: 'Noto Sans', sans-serif; /* Apply the custom font to the entire body */
+}
 
-  }
-  
+h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.navright {
+    text-align: right;
+    list-style-position: inside;
+}
+.skyblue-bg {
+    padding: 20px;
+    background-color: skyblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {     
+    .navbar-nav {
+       margin-top: 10px;
+       text-align: center; 
+    }
+ 
+    .navbar-toggler {
+       margin: 10px; 
+    
+    }
+ 
+    #footer-text {
+       font-size: 16px;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
